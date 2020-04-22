@@ -3,3 +3,12 @@
     margin:auto;
     margin-top:50px;
 }
+
+input,textarea{
+
+
+
+&.ng-invalid{
+    background-color:red;
+}
+}
