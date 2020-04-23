@@ -13,9 +13,10 @@
     </div>
 
     <div class="notes-list">
-        <app-notecard title ="cardTitle" body = "testing testing this is the body"> </app-notecard>
-        <app-notecard> </app-notecard>
-        <app-notecard> </app-notecard>
+        <app-notecard *ngFor="let note of notes" [title] ="note.title" [body] = "note.body"> </app-notecard>
+
     </div>
+
+    <button class="button floating-add-button is-primary" routerLink = "new">+Add</button>
 
 </div>
